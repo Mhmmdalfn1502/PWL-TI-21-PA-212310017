@@ -22,11 +22,19 @@ const FormData = () => {
     e.preventDefault();
 
     if (formData.npm.length !== 10 || isNaN(formData.npm) ) {
+<<<<<<< HEAD
       alert('NPM harus terdiri dari 10 digit numeri yac');
       return;
     }
     if (!formData.firstName || !formData.lastName || !formData.birthdate) {
       alert('Semua data wajib diisi kecuali Middle Name ya');
+=======
+      alert('NPM harus terdiri dari 10 digit numeric');
+      return;
+    }
+    if (!formData.firstName || !formData.lastName || !formData.birthdate) {
+      alert('Semua data wajib diisi kecuali Middle Name');
+>>>>>>> 6841c90316465281c2302875d7c9d4d2e8477870
       return;
     }
 

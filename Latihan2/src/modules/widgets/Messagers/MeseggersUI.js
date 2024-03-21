@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ButtonPrimary, ButtonSecondary } from "./ButtonUI";
-import ChatBody from "./ChatBody";
+import { ButtonPrimary, ButtonSecondary } from "./components/ButtonUI";
+import ChatBody from "./components/ChatBody";
 import moment from "moment";
 
 const StylesMessager = {

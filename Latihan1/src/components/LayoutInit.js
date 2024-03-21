@@ -1,7 +1,5 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import ChapterOne from "./ChapterOne";
-
+import Footers from "./Footers";
+import Headers from "./Headers";
 
 const LayoutInit = ({ children }) => {
   return (
@@ -9,15 +7,15 @@ const LayoutInit = ({ children }) => {
       <div className="">
         <div className="">
           
-          <Header />
+          <Headers />
 
-          <section className="py-5">
+          <section className="">
             <div className="">
               {children}
             </div>
           </section>
 
-          <Footer />
+          <Footers />
 
         </div>
       </div>
