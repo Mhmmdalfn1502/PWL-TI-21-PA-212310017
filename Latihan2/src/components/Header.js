@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ButtonSecondary } from "../modules/widgets/Messagers/components/ButtonUI";
+import { ButtonSecondary } from "../modules/chapter-1/widgets/Messagers/components/ButtonUI";
 import React from "react";
 
 const LinkStyle = {
@@ -31,7 +31,7 @@ const Header = () => {
         <div className="d-flex py-3 px-5 text-center align-items-center gap-3 justify-content-center">
           <a href="home">
             <ButtonSecondary items={{}}>
-              <i className="bi bi-house"></i>
+              <i className="bi bi-house" style={{ fontSize: "20px" }}></i>
             </ButtonSecondary>
           </a>
           <a className="text-decoration-none" style={LinkStyle}>
@@ -39,13 +39,13 @@ const Header = () => {
           </a>
           <a href="">
             <ButtonSecondary items={{}}>
-              <i className="bi bi-chat"></i>
+              <i className="bi bi-chat" style={{ fontSize: "20px" }}></i>
             </ButtonSecondary>
           </a>
         </div>
         <div className="d-flex gap-3 justify-content-end" style={{ width: "250px" }}>
           <ButtonSecondary items={{}}>
-            <i className="bi bi-bell"></i>
+            <i className="bi bi-bell" style={{ fontSize: "20px" }}></i>
           </ButtonSecondary>
           <img src="https://i.pinimg.com/564x/ce/37/5a/ce375a340e795c18f3051edc7ef8cdce.jpg" style={ProfileStyle} />
         </div>

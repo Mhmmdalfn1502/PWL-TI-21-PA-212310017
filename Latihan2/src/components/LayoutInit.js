@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import ChapterOne from "../modules/ChapterOne";
+import ChapterOne from "../modules/chapter-1/ChapterOne";
 
 const LayoutInit = ({ children }) => {
   return (
