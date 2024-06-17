@@ -8,12 +8,27 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+require("dotenv").config(); 
+const express = require('express') 
+ 
+const app = express() 
+const port = process.env.API_PORT; 
+ 
+app.get('/', (req, res) => { 
+  res.send('Hello World!') 
+}) 
+ 
+app.listen(port, () => { 
+  console.log(`Server app listening on 
+http://localhost:${port}`); 
+}); 
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
